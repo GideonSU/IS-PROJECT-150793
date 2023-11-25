@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+    <fieldset>
+    <legend> <h1>Sign Up</h1> </legend>
+    <form action="Process Form.php" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+<br>
+        <input type="password" id="password" name="password" 
+        placeholder="Enter new Password">
+<br>
+        <input type="password" placeholder="Confirm Password"
+         id="confirm_password" required>
+
+        <label for="confirm_p"></label>
+
+        <fieldset>
+            <legend>
+                <label for="usertype">usertype</label>
+            </legend>
+        <select name="usertype" id="usertype" >
+            <option value="1">Admin</option>
+            <option value="2" selected>Buyer</option>
+            <option value="3">Seller</option>
+        </select>
+        
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="Terms_and_conditions" id="">
+            I agree to the <a target="_blank" href="https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed">
+                Terms and Conditions
+                            </a> 
+        </label>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+<br>
+    <a target="_blank" href="Signup.html">Already have an account?</a>
+
+</fieldset>
+</body>
+</html>

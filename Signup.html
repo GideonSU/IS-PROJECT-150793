@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+    <h1>Hey! Dont have an account yet?
+        <br>
+        Sign Up Right below.</h1>
+    <form action="Signup.php" method="post">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label>Date of Birth</label>
+        <input type="date" id="DOB" name="DOB">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" name="phoneNumber">
+
+        <fieldset>
+            <legend>
+                <label for="usertype">Select User-type</label>
+            </legend>
+        <select name="usertype" id="usertype" >
+            <option value="1">Admin</option>
+            <option value="2" selected>Buyer</option>
+            <option value="3">Seller</option>
+        </select>
+        
+        </fieldset>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="password">Confirm Password</label>
+        <input type="password" id="password" name="password">
+
+        <label>
+            <input type="checkbox" name="Terms_and_conditions" id="">
+            I agree to the <a target="_blank" href="https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed">
+                Terms and Conditions
+                            </a> 
+        </label>
+
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
